@@ -2,6 +2,7 @@ package com.example.java_week3_springstudent.controller;
 
 import com.example.java_week3_springstudent.model.Student;
 import com.example.java_week3_springstudent.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class StudentController {
 
     private final StudentService service;
 
+    @Autowired
     public StudentController(StudentService service) {
         this.service = service;
     }
